@@ -1,4 +1,4 @@
-{% set version = "0.9.16" %}
+{% set version = "0.9.21" %}
 
 package:
     name: slacker
@@ -7,7 +7,7 @@ package:
 source:
     url: https://github.com/os/slacker/archive/v{{ version }}.tar.gz
     fn: slacker-{{ version }}.tar.gz
-    sha256: 453d554adcc33df92db926fc4f5ad2a5a10364cdae4503ec1ca67bf4a8684592
+    sha256: cc74b71adad43df3e2db027d7d8ea11d2cf669dd178c0b92dfc0cb230040937f
 
 build:
     number: 0
