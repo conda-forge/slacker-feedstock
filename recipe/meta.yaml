@@ -24,12 +24,6 @@ requirements:
 test:
     imports:
         - slacker
-    requires:
-        - pytest
-        - mock
-    commands:
-        - py.test {{ environ.SRC_DIR }}/tests -vrsx
-
 about:
     home: https://github.com/os/slacker
     license: Apache 2.0
