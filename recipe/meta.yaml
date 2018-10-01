@@ -1,5 +1,5 @@
-{% set version = "0.9.60" %}
-{% set sha = "5d54950a1956c6faff3c82cd116aed4436cf0e322a72747d77b9189d5ec7f8cb" %}
+{% set version = "0.9.42" %}
+{% set sha = "c344f1487857e68a9104d8e4dea5eb481f5c1daee404c1fc1475fd695360342d" %}
 
 package:
     name: slacker
@@ -11,12 +11,14 @@ source:
     sha256: {{ sha }}
 
 build:
+    nopython: True
     number: 0
-    script: python setup.py install --single-version-externally-managed --record=record.txt
+    script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-    build:
+    host:
         - setuptools
+        - pip
         - python
     run:
         - python
