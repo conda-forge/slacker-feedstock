@@ -1,6 +1,5 @@
-{% set version = "0.9.60" %}
-{% set sha = "5d54950a1956c6faff3c82cd116aed4436cf0e322a72747d77b9189d5ec7f8cb" %}
-
+{% set version = "0.12.0" %}
+{% set sha = "7771d4edd2bf651f849b9ca84e54a9d343de4fd7a87fa8d31b872407441a4812" %}
 package:
     name: slacker
     version: {{ version }}
