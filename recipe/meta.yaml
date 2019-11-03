@@ -1,37 +1,39 @@
 {% set version = "0.12.0" %}
-{% set sha = "7771d4edd2bf651f849b9ca84e54a9d343de4fd7a87fa8d31b872407441a4812" %}
+
 package:
-    name: slacker
-    version: {{ version }}
+  name: slacker
+  version: {{ version }}
 
 source:
-    url: https://pypi.io/packages/source/s/slacker/slacker-{{ version }}.tar.gz
-    fn: slacker-{{ version }}.tar.gz
-    sha256: {{ sha }}
+  url: https://pypi.io/packages/source/s/slacker/slacker-{{ version }}.tar.gz
+  sha256: 7771d4edd2bf651f849b9ca84e54a9d343de4fd7a87fa8d31b872407441a4812
 
 build:
-    number: 1000
-    script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1001
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-    build:
-        - setuptools
-        - python
-    run:
-        - python
-        - requests
+  build:
+    - python
+    - pip 
+  run:
+    - python
+    - requests
 
 test:
-    imports:
-        - slacker
+  imports:
+    - slacker
+
 about:
-    home: https://github.com/os/slacker
-    license: Apache 2.0
-    summary: Slack API client
+  home: https://github.com/os/slacker
+  license: Apache-2.0
+  license_file: LICENSE
+  summary: Slack API client
 
 extra:
-    recipe-maintainers:
-        - ericdill
-        - licode
-        - os
-        - tacaswell
+  recipe-maintainers:
+   - ericdill
+   - licode
+   - os
+   - tacaswell
