@@ -3,7 +3,7 @@ About slacker
 
 Home: https://github.com/os/slacker
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
@@ -14,9 +14,15 @@ Summary: Slack API client
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/slacker-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/slacker-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/slacker-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/slacker-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/slacker-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/slacker-feedstock/branch/master)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1924&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slacker-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -49,6 +55,8 @@ conda search slacker --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -104,3 +112,12 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@ericdill](https://github.com/ericdill/)
+* [@licode](https://github.com/licode/)
+* [@os](https://github.com/os/)
+* [@tacaswell](https://github.com/tacaswell/)
+
