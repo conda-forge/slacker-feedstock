@@ -117,6 +117,7 @@ Feedstock Maintainers
 =====================
 
 * [@ericdill](https://github.com/ericdill/)
+* [@hadim](https://github.com/hadim/)
 * [@licode](https://github.com/licode/)
 * [@os](https://github.com/os/)
 * [@tacaswell](https://github.com/tacaswell/)
