@@ -1,5 +1,5 @@
 {% set name = "slacker" %}
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f4c55415096229c1cc616c1504d93672b05521e5499a9be26475e0a9a623c4dc
+  sha256: 1ae7c597025c114e202b5c880345f150f795665bfc638010cac614ede4ed5108
 
 build:
   number: 0
