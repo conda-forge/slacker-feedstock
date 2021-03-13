@@ -5,11 +5,9 @@ Home: https://github.com/os/slacker
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/slacker-feedstock/blob/master/LICENSE.txt)
 
 Summary: Slack API client
-
-
 
 Current build status
 ====================
@@ -108,15 +106,14 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
 =====================
 
-* [@ericdill](https://github.com/ericdill/)
 * [@hadim](https://github.com/hadim/)
 * [@licode](https://github.com/licode/)
 * [@os](https://github.com/os/)
