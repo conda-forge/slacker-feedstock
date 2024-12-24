@@ -18,7 +18,8 @@ requirements:
   build:
   host:
     - python {{ python_min }}
-    - pip 
+    - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - requests
